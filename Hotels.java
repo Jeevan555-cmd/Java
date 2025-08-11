@@ -1,4 +1,4 @@
-class Hotel{
+class Hotels{
 public static void main(String []args){
      String name="HOTEL TAJ";
 	 byte  rooms=50;
