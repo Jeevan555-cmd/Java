@@ -1,0 +1,154 @@
+1) Java is a High level Object Oriented Program.
+2) Bytecode is a code which is generated when the program is compiled.using the bytecode we can run the program anywhere  across the OS.
+3)Basically JDK Archietecture Consists of  Main section called JRE and Build Tools; JRE helps to provide the Run time Environment to the program and aslo It helps to compile the code with command called javac
+   Build tools contains Java,javac,javaDoc etc, It checks the program if it has an error then it provides the compilation error
+   Inside the that it contains JVM(Java Virtual Machine) and Some Set of Libraries;
+   JVM helps to run the Bytecode to run the program;
+   when the java command is used it conevrts the bytecode into the output of program, It uses the Set of libraries like java, and all;
+4)JVM helps to run the program with help of bytecode which is generated whn the program is compiled
+    JVM starts the execution from thew main Method.
+
+5)Variables is the name given to the Memory Allocation; 
+  There are 4 Types
+  1.Local Variables
+  2.Static Variables
+  3.Non-static Variables
+  4.Parameterized Variables
+  
+6) Datatype is a Type of Data where the Variables are refers to.
+   
+   Primitive Datatype:This Data types have a  fixed size and defined data types;
+   *byte-1 byte-8 bits.
+   *short-2 byte-16 bits.
+   *int-4 byte-32 bits.
+   *long- 8 byte-64 bits.
+   *char-2 byte-16 bits.
+   *float-4 byte-32 bits.
+   *double- 8 byte-64 bits.
+   *boolean- 1 byte-8 bits.
+   
+   Non-Primitive Datatype: This Data Types are also called as Object type Datatype and There sizes are Not fixed .
+   *String- 
+   *array-
+   *object classees etc...
+   
+7) Array is Collection of a datas with same datatype.
+  class arrays{
+  public static void main(String[] args){
+  int [] price={10,15,20,25,30,35,40};
+  System.out.println("The elements are"+price[]);
+  }
+  }
+   
+8)Local variables are the variables where they initailized and declared within the method.
+   Their scope is within the Method.
+   
+  Static variables are the Variables where they are Intialized and declared in the class level. Since  it is associated with class
+  so we can access anywhere using the class name.
+  Their scope is within the class .
+  
+9) Methods are the block of code helps to perfom a specific task.
+
+10)Static methods are the methods where we can access the datas of that method suing there class name.since it uis Associated with class So we can access them with the class name and Method name or variables name
+   syntax: Class name . method name or variable name;
+    
+   example:
+   
+                class GymSchedule{
+						public static void monday(){
+						System.out.println("Monday i do Chest and Tricep wor kout ");
+							}	
+							
+						public static void tuesday(){
+						System.out.println("Tuesday i do Back and Biceep workout");
+							}
+						public static void wednesday(){
+						System.out.println("Wednesday i do Shoulders  and Forearm workout");
+									}
+						public static void thursday(){
+						System.out.println("Thursday i do Chest  and Tricep workout");
+								}
+						public static void friday(){
+						System.out.println("Friday i do Back and Biceep workout");
+											}
+						public static void saturday(){
+						System.out.println("Saturday i do Leg workout");
+
+												}
+
+						public static void main(String [] args){
+									monday();
+									tuesday();
+									wednesday();
+									thursday();
+									friday();
+									saturday();
+									}
+											}
+   
+11)Method chaining is process where we calls the method inside the method. it  is like connecting the method like a chain.s
+                      
+					  class GymSchedule{
+						public static void monday(){
+						System.out.println("Monday i do Chest and Tricep workout ");
+								tuesday();
+
+							}	
+							public static void tuesday(){
+							System.out.println("Tuesday i do Back and Biceep workout");
+								wednesday();
+
+								}
+								public static void wednesday(){
+								System.out.println("Wednesday i do Shoulders  and Forearm workout");
+								thursday();
+									}
+								public static void thursday(){
+									System.out.println("Thursday i do Chest  and Tricep workout");
+									friday();
+										}
+									public static void friday(){
+									System.out.println("Friday i do Back and Biceep workout");
+									saturday();
+											}
+									public static void saturday(){
+									System.out.println("Saturday i do Leg workout");
+
+									}
+
+									public static void main(String [] args){
+											monday();
+										}
+				                        }
+
+12)Defaultvalues are the values given to the each datatype when we dont assign the values for the  datatype.
+   JVM provides the default values for the Datatype.
+   
+13)   LOCAL VARIABLES: Here we declaring ,initailising , or Reassigning the values inside the Method. we cannot declare or inistailize outside the 
+                       the method.
+
+       class LocalVariables{
+		   public static void main(String[] args){
+			   int price=25;
+			   price=25;
+			   System.out.println("The price of Laptop is:"+price);
+		   }
+	   }
+	   
+	   
+	   STATIC VARIABLES:here we declared and initailized inside the class level so we can access anywhere in the class and also we cannot reassign the
+	                    values inside the class so iam reassigning the values inside the method.
+	   
+	   
+	    class LocalVariables{
+			static int price=25;
+			static boolean isTrue=false;
+		   public static void main(String[] args){
+			   price=30;
+			   isTrue=true;
+			   
+			   System.out.println("The price of Laptop is:"+price);
+			   System.out.println("The Values are:"+isTrue);
+		   }
+	   }
+	   
