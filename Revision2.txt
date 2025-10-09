@@ -1,0 +1,232 @@
+1)There are 4 types of Variables
+  *local variable
+  *static variable
+  *non-static variable
+  *Parameterized variable
+  
+  local-These variables are declared and initialized in a method , their 
+         scope lies between the method. we cannot access in other method.
+  static -These variables are declared with a static keyword and they are declared and 
+          initialized at the level of class and we can access in any classes
+  Non-static-These variables are declared  and initialized at the level of class 
+           without keyword static and they are associated to the objects.
+  Parameter-These variables are declared inside the method paranthesise.
+  
+2)Default values are the values which are provided by the jvm at the 
+   time of compilation and when jvm loads the code it provides the default values for 
+    datatypes when we declared but didn't assign the values.
+    byte-0
+    short-0
+    int-0
+    long-0
+    char-blank space( )	
+    float-0.0
+    double-0.0
+    String-null
+	boolean-false
+	
+3)No.Local variables cant have a Default values 
+
+4)Using there Class name and variable.
+
+5)No, we cant acces the non static variavbles in static method
+
+6)Method overloading and Constructor overloading acts as same but in method overloading
+  we call the method directly in a method, whereas in constructor overloading we invoke them
+   using the keyword new. 
+   and also constructor overloading cant have return type.
+
+7)No, we require parameters to achieve the method overloading.
+
+8)this keyword  defines the current object in a method.
+
+9)static method-we can access the method at any class and also if we change 
+  any datas it will affect the every data in specific method
+  
+  instance method-Here we can make instance of many method and we can make copy of that
+   and also we can change the datas with respect to us
+   
+10)Constructor-It is special type of a method which it doesn't have any return type   
+                and its name should be same as the class name
+   Method-It is a block of code which performs specific tasks
+   Variables-The name given to the memory allocation
+
+11)Yes we can achieve Constructor overloading in java
+
+12)It both achieve the overloading but we invoke the constructor using the keyword new
+   in method we directly call the method.
+
+13)If we don't define the constructor  it will execute because default constructor will be there
+ 
+14)yes we can call a constructor from another constructor
+
+15)no,constructor cannot have return values
+
+16)class Calendar{
+int price;
+int noOfdays;
+String month;
+boolean isPresent;
+
+
+public Calendar(int price, int noOfdays,String month,boolean isPresent){
+this.price=price;
+this.noOfdays=noOfdays;
+this.month=month;
+this.isPresent=isPresent;
+
+
+}
+public static void main(String[] args){
+Calendar obj=new Calendar(12,31,"January",true);
+System.out.println("The Price of The Calendar is:"+obj.price);
+System.out.println("The noOfdays in a Month:"+obj.noOfdays);
+System.out.println("It is a "+obj.month+" month");
+System.out.println("The Calendar is perfect :"+obj.isPresent);
+
+Calendar info=new Calendar(17,28,"February",true);
+System.out.println("The Price of The Calendar is:"+info.price);
+System.out.println("The noOfdays in a Month:"+info.noOfdays);
+System.out.println("It is a "+info.month+" month");
+System.out.println("The Calendar is perfect :"+info.isPresent);
+
+Calendar data=new Calendar(22,27,"March",false);
+System.out.println("The Price of The Calendar is:"+data.price);
+System.out.println("The noOfdays in a Month:"+data.noOfdays);
+System.out.println("It is a "+data.month+" month");
+System.out.println("The Calendar is perfect :"+data.isPresent);
+
+Calendar bag=new Calendar(25,30,"April",true);
+System.out.println("The Price of The Calendar is:"+bag.price);
+System.out.println("The noOfdays in a Month:"+bag.noOfdays);
+System.out.println("It is a "+bag.month+" month");
+System.out.println(" The Calendar is perfect:"+bag.isPresent);
+
+}
+
+}
+
+17)class DefaultValue{
+static byte kilo;
+static short ton;
+static int price;
+static long phoneNumber;
+static boolean isAvailable;
+static char variety;
+static float gst;
+static double reviews;
+static String contents;
+publ;ic static void main(String[] args){
+System.out.println(kilo);
+System.out.println(ton);
+System.out.println(price);
+System.out.println(phoneNumber);
+System.out.println(isAvailable);
+System.out.println(variety);
+System.out.println(contents);
+System.out.println(gst);
+System.out.println(reviews);
+
+
+}
+}
+
+18) class DefaultValue{
+ byte kilo;
+ short ton;
+ int price;
+ long phoneNumber;
+ boolean isAvailable;
+ char variety;
+ float gst;
+ double reviews;
+ String contents;
+public static void main(String[] args){
+
+DefaultValue obj=new DefaultValue();
+
+System.out.println(obj.kilo);
+System.out.println(obj.ton);
+System.out.println(obj.price);
+System.out.println(obj.phoneNumber);
+System.out.println(obj.isAvailable);
+System.out.println(obj.variety);
+System.out.println(obj.contents);
+System.out.println(obj.gst);
+System.out.println(obj.reviews);
+
+
+}
+} 
+
+19)class GymSchedule
+				public static void monday(){
+				System.out.println("Monday i do Chest and Tricep workout ");
+								tuesday();
+
+							}	
+							public static void tuesday(){
+							System.out.println("Tuesday i do Back and Biceep workout");
+								wednesday();
+
+								}
+								public static void wednesday(){
+								System.out.println("Wednesday i do Shoulders  and Forearm workout");
+								thursday();
+									}
+						public static void thursday(){
+									System.out.println("Thursday i do Chest  and Tricep workout");
+									friday();
+										}
+									public static void friday(){
+									System.out.println("Friday i do Back and Biceep workout");
+									saturday();
+											}
+									public static void saturday(){
+									System.out.println("Saturday i do Leg workout");
+
+									}
+									public static void main(String [] args){
+									 		monday();
+	                                      }
+				                        }
+  
+   
+    
+20)class Mat{
+int length;
+String name;
+double review;
+boolean isAvailable;
+float gst;
+
+
+public Mat(){
+System.out.println("It is a No parametr Constructor");
+
+}
+public Mat(int length){
+System.out.println("It is a Single parameter Constructor ");
+System.out.println("Name is"+length);
+}
+public Mat(double review, boolean isAvailable){
+ 
+ System.out.println("The Review is"+review);
+ System.out.println("Is is Available"+isAvailable);
+	
+}
+
+public static void main(String [] args){
+
+Mat obj=new Mat();
+
+Mat obj1=new Mat(12535);
+Mat obj2=new Mat(5.56844,true);
+
+}
+
+}	
+        
+              
+  			
+         
