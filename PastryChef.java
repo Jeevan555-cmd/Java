@@ -1,0 +1,2 @@
+class PastryChef extends Chef {
+}

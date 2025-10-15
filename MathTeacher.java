@@ -1,0 +1,2 @@
+class MathTeacher extends Teacher {
+}

@@ -1,0 +1,3 @@
+class Cars extends Vehicles{
+	
+}

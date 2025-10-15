@@ -1,0 +1,2 @@
+class ShootingGame extends Game {
+}

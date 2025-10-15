@@ -1,0 +1,3 @@
+class Jeevan extends Person{
+	
+}
