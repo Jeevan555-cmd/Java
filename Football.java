@@ -1,0 +1,2 @@
+class Football extends Sport {
+}

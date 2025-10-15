@@ -1,0 +1,2 @@
+class Nurse extends Doctor {
+}

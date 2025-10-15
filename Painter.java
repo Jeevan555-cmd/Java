@@ -1,0 +1,2 @@
+class Painter extends Artist {
+}
