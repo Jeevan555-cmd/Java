@@ -5,7 +5,7 @@ class Animal {
         System.out.println(" animal is eating.");
     }
 
-    public static  void sleep() {
+      void sleep() {
         System.out.println("  animal is sleeping.");
     }
 

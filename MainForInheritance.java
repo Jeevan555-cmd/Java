@@ -1,62 +1,46 @@
 class MainForInheritance{
 
 public static void main(String[] args){
-Animal a=new Animal();
-a.eat();
-a.makeSound();
-Dog d=new Dog();
-d.sleep();
-d.move();
+Animal a =new Dog();
+a.sleep();
+a.move();
 
-Person p=new Person();
-p.speak();
-p.eat();
-Jeevan j=new Jeevan();
+
+Person j=new Jeevan();
 j.walk();
-j.sleep();
+j.eat();
 
 
-Vehicles v=new Vehicles();
-v.start();
-v.stop();
-Cars c=new Cars();
-c.accelerate();
-c.brake();
+Vehicles car=new Cars();
+car.start();
+car.stop();
 
-Employee emp=new Employee();
-emp.work();
-emp.takeBreak();
-Manager man= new Manager();
-man.getSalary();
-man.attendMeeting();
 
-Bird b=new Bird();
-b.sleep();
-b.eat();
-Parrot parrot= new Parrot();
+Employee man=new Manager();
+man.work();
+man.takeBreak();
+
+
+Bird parrot=new Parrot();
+
 parrot.fly();
-parrot.sing();
+parrot.eat();
 
-Gadget g =new Gadget();
-g.on();
+
+Gadget g =new Smartphone();
+g.charge();
 g.off();
-Smartphone s=new Smartphone();
-s.charge();
-s.use();
 
-Sport sport=new Sport();
-sport.play();
-sport.cheer();
-Football f=new Football();
-f.rest();
-f.train();
 
-Pet pet=new Pet();
-pet.eat();
-pet.sleep();
-Cat cat =new Cat();
+Sport sport=new Football();
+sport.rest();
+sport.train();
+
+
+Pet cat=new Cat();
 cat.play();
-cat.makeSound();
+cat.sleep();
+
 
 Teacher teacher=new Teacher();
 teacher.teach();
@@ -65,61 +49,43 @@ MathTeacher m=new MathTeacher();
 m.correctPapers();
 m.takeAttendance();
 
-Building build=new Building();
+Building build=new School();
 build.open();
 build.close();
-School school=new School();
-school.lightOff();
-school.lightOn();
 
-Machine mac=new Machine();
-mac.start();
-mac.stop();
-WashingMachine w=new WashingMachine();
+
+Machine w=new WashingMachine();
 w.repair();
 w.run();
 
-Doctor doctor= new Doctor();
-doctor.diagnose();
-doctor.check();
-Nurse n=new Nurse();
-n.treat();
-n.help();
+Doctor nurse= new Nurse();
+nurse.check();
+nurse.treat();
 
-Aircraft air=new Aircraft();
+Aircraft air=new FighterJet();
 air.fly();
 air.land();
-FighterJet jet=new FighterJet();
-jet.takeOff();
-jet.refuel();
 
-Artist art=new Artist();
+Artist art=new Painter();
 art.draw();
 art.paint();
-Painter painter=new Painter();
-painter.rest();
-painter.exhibit();
 
-Chef chef= new Chef();
-chef.cook();
+
+Chef chef= new PastryChef();
+chef.serve();
 chef.cleanKitchen();
-PastryChef pchef=new PastryChef();
-pchef.prepareIngredients();
-pchef.serve();
 
-Bicycle bike= new Bicycle();
-bike.pedal();
-bike.brake();
-MountainBike mbike=new MountainBike();
-mbike.ringBell();
-mbike.park();
 
-Game game=new Game();
+
+Bicycle bike= new MountainBike();
+
+bike.ringBell();
+bike.park();
+
+Game game=new ShootingGame();
 game.start();
 game.play();
-ShootingGame sgame=new ShootingGame();
-sgame.pause();
-sgame.end();
+
 }
 
 }
