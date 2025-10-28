@@ -13,14 +13,14 @@ public static void main(String[] args) {
 			
 		}
 		
-		Devices d = new Mobilee(); // Upcasting
+		Devices d = new Mobilee(); 
         d.powerOn();
         d.powerOff();
 
         if (d instanceof Mobilee) {
             Mobilee m = (Mobilee) d; // Downcasting
             m.callFeature();
-            m.powerOn(); // Calls overridden method
+            m.powerOn(); 
         } else {
             System.out.println("It is not an instance of Mobile");
         }
